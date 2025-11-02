@@ -31,7 +31,7 @@ h1, h2, h3, h4 { color: var(--color-primary); }
 
 h1 {
     font-size: 40px;
-    background: linear-gradient(to right, #457B9D 0%, #457B9D 100%);
+    background:  var(--color-secondary);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     animation: reveal 2s forwards;
@@ -164,10 +164,5 @@ h4 {
         width: 80%;
         padding: 20px;
         margin: 20px auto; 
-}
-
-@keyframes reveal {
-  from { background-size: 0% 100%; }
-  to   { background-size: 100% 100%; }
 }
 }
