@@ -1,0 +1,173 @@
+:root {
+    /* Colors */
+    --color-primary: #1D3557;
+    --color-secondary: #457B9D;
+    --color-accent: #A8DADC;
+    --color-light: #F1FAEE;
+    --color-white: #fefefe;
+    
+    /* Spacing */
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
+    
+    /* Sizes */
+    --container-width: 600px;
+    --image-size: 200px;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    border-radius: 1%;
+}
+
+/* Typography */
+.spartan { font-family: "League Spartan", sans-serif;}
+.lora {font-family: "Lora", serif;}
+
+/* Headings */
+h1, h2, h3, h4 { color: var(--color-primary); }
+
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #457B9D 0%, #457B9D 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: reveal 2s forwards;
+}
+
+h2 {
+    font-weight: 400;    
+    background: var(--color-primary);
+    font-size: 20px;
+}
+
+h3 {
+    margin: var(--spacing-lg);  
+    font-size: 35px;
+}
+
+h4 {
+     font-weight: 700;
+     font-size: 16px;
+}
+
+/* Sections */
+#hero {
+    background-image: url("images/ahus.jpg");
+    background-size: cover;
+    margin: 0px;
+    height: 500px;
+    align-content: center;
+    padding: 0 30%;
+}
+
+.heading-hero {
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 12px;
+    color: #F1FAEE;
+}
+
+.activities-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0px 5px;
+    object-fit: cover;
+    transition: transform 2s;
+    transform-origin: center;
+}
+
+.container-activities-img {
+    width: 200px;            
+    height: 200px;
+    overflow: hidden;        
+    display: inline-block;
+    border-radius: 50%;  
+}     
+
+.container-activities-img:hover img {
+    transform: scale(1.2);
+}
+
+#activities {
+    background: #F1FAEE;
+    margin: 0;
+    color: #1D3557;
+    padding: 40px 20%;
+}
+
+#activities-section {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    gap: 24px;
+}
+
+.activities-column {
+    margin: 16px
+}
+
+#guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#1D3557;
+    background:#fefefe;
+    margin: 0;
+    text-align: center;
+}
+
+#guide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin: 50px 50px;
+    background: #A8DADC;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 40px;
+    border-bottom: 6px solid #1D3557;
+}
+
+#me-img {
+   object-fit: cover;
+   object-position: 50% 35%;
+   width: 300px;
+   height: 400px;
+   border-radius: 5px;
+   margin: 20px 20px;
+}
+
+#guide-name {
+  font-size: 24px;
+}
+
+#guide-heading {
+    font-size: 32px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #activities-section {
+        flex-direction: column;
+  }
+    h2.heading-hero {
+        font-size: 16px;
+  } 
+    #guide-container {
+        width: 80%;
+        padding: 20px;
+        margin: 20px auto; 
+}
+
+@keyframes reveal {
+  from { background-size: 0% 100%; }
+  to   { background-size: 100% 100%; }
+}
+}
