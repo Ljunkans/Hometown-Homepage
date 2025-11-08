@@ -31,7 +31,7 @@ h1, h2, h3, h4 { color: var(--color-primary); }
 
 h1 {
     font-size: 40px;
-    background:  var(--color-secondary);
+    background: var(--color-secondary);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     animation: reveal 2s forwards;
